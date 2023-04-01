@@ -1,4 +1,4 @@
-package com.au.aon.test;
+package com.au.aon.demo;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+/**
+ * @author Archi Madhu
+ */
 class FindIndexTest {
 
     @DisplayName("Test FindIndex.findSubArrayIndex()")
