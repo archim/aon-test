@@ -11,10 +11,10 @@ public class MeasureExecutionTime {
 
     /**
      *
-     * @param incDec
+     * @param incDec object of IncDec interface
      * @return time taken to execute increment method from client of IncDec interface
      */
-    public long measureTimeToIncrement(IncDec incDec) {
+    public void measureTimeToIncrement(IncDec incDec) {
         // did put some logger to get time > 0, otherwise execution is so quick sometimes you get 0 as elaspsed time
         final long startTime = System.currentTimeMillis();
         log.info("measureTimeToIncrement > startTime " + startTime);
@@ -23,15 +23,14 @@ public class MeasureExecutionTime {
         log.info("measureTimeToIncrement > stopTime " + stopTime);
         final long timeTakenInMilliSec = stopTime - startTime;
         log.info("Increment took - " + timeTakenInMilliSec + " milliseconds");
-        return timeTakenInMilliSec;
     }
 
     /**
      *
-     * @param incDec
+     * @param incDec object of IncDec interface
      * @return time taken to execute decrement method from client of IncDec interface
      */
-    public long measureTimeToDecrement(IncDec incDec) {
+    public void measureTimeToDecrement(IncDec incDec) {
         final long startTime = System.currentTimeMillis();
         log.info("measureTimeToDecrement > startTime " + startTime);
         incDec.decrement();
@@ -39,7 +38,6 @@ public class MeasureExecutionTime {
         log.info("measureTimeToDecrement > stopTime " + stopTime);
         final long timeTakenInMilliSec = stopTime - startTime;
         log.info("Increment took - " + timeTakenInMilliSec + " milliseconds");
-        return timeTakenInMilliSec;
     }
 
 }

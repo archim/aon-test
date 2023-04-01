@@ -6,8 +6,8 @@ package com.au.aon.demo;
 public class FindIndex {
     /**
      *
-     * @param array1
-     * @param array2
+     * @param array1 integer array
+     * @param array2 integer array
      * @return index of sub array in main array
      */
     public static int findSubArrayIndex(int[] array1, int[] array2) {
